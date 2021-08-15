@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Travelo</title>
 </head>
 <body>
@@ -99,22 +100,192 @@
             <h2>Recommendated Destination</h2>
             <div class="tabbed_content">
                 <!-- tab links-->
-                <div class="tab_links">
-                        <ul>
-                            <li>The Weekend Break</li>
-                            <li>The Package Holiday</li>
-                            <li>The Group Tour</li>
-                            <li>Long Term Long Travel</li>
-                        </ul>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> The Weekend Break</button>
+                    <button class="btn" onclick="filterSelection('package')"> The Package Holiday</button>
+                    <button class="btn" onclick="filterSelection('group')"> The Group Tour</button>
+                    <button class="btn" onclick="filterSelection('long')"> Long Term Slow Travel</button>
                 </div>
-                <div class="tab_content">
-                    <div class="singapore">
+                <!-- Tab Content-->
+                <div id="weekend" class="tab_content">
+                
+                     <!-- Singapore-->
+                    <div class="city package">
                         <img src="img/Singapore.png" alt="Singapore">
                         <p>Singapore, officially the Republic of Singapore, is a </p>
+                        <div class="icons">
+                            <i class="fa fa-hotel_location"></i>
+                            <i class="fa fa-dish"></i>
+                            <i class="fa fa-plane"></i>
+                            <p>1000 Kms</p>
+                        </div>
+                        <div class="ruppees">
+                           <p>K38000</p> 
+                           <p>Approx 2 night trip</p>
+                        </div>
+                    </div>
+
+                      <!-- Thailand-->
+                    <div class="city package">
+                        <img src="img/Thailand.png" alt="Thailand">
+                        <p>Thailand is a Southeast Asian country. It's known for</p>
+                        <div class="icons">
+                            <!--Icons here-->
+                            <p>1000 Kms</p>
+                        </div>
+                        <div class="ruppees">
+                           <p>K78000</p> 
+                           <p>Approx 2 night trip</p>
+                        </div>
+                    </div>
+
+                      <!-- Paris-->
+                    <div class="city group">
+                        <img src="img/Paris.png" alt="Paris">
+                        <p>Paris, France's capital, is a major European city and a</p>
+                        <div class="icons">
+                            <!--Icons here-->
+                            <p>1000 Kms</p>
+                        </div>
+                        <div class="ruppees">
+                           <p>K75000</p> 
+                           <p>Approx 2 night trip</p>
+                        </div>
+                    </div>
+
+                      <!-- New Zealand-->
+                    <div class="city group">
+                        <img src="img/New Zealand.png" alt="New Zealand">
+                        <p>New Zealand is an island country in the </p>
+                        <div class="icons">
+                            <!--Icons here-->
+                            <p>1000 Kms</p>
+                        </div>
+                        <div class="ruppees">
+                           <p>K43000</p> 
+                           <p>Approx 2 night trip</p>
+                        </div>
+                    </div>
+
+                      <!-- Bora Bora -->
+                    <div class="city long">
+                        <img src="img/Bora Bora.png" alt="Bora Bora">
+                        <p>Bora Bora is a small South Pacific island northwest of</p>
+                        <div class="icons">
+                            <!--Icons here-->
+                            <p>1000 Kms</p>
+                        </div>
+                        <div class="ruppees">
+                           <p>K93000</p> 
+                           <p>Approx 2 night trip</p>
+                        </div>
+                    </div>
+
+                    <!-- London-->
+                    <div class="city long">
+                        <img src="img/London.png" alt="London">
+                        <p>London, the capital of England and the United </p>
+                        <div class="icons">
+                            <!--Icons here-->
+                            <p>1000 Kms</p>
+                        </div>
+                        <div class="ruppees">
+                           <p>K57000</p> 
+                           <p>Approx 7 night trip</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tab Content-->
+            </div>
+        </div>
+    </main>
+    <!-- Main-->
+
+    <!-- Article-->
+    <article>
+        <div class="container">
+            <h2>Blogs</h2>
+            <div class="blogs">
+                <div class="kilimanjaro">
+                    <img src="img/Kilimanjaro.png" alt="Ultimate Guide to Climbing Kilimanjaro">
+                    <p>The Ultimate Guide to Climbing Mount Kilimanjaro</p>
+                </div>
+                <div class="traveler">
+                    <div class="plane">
+                        <img src="img/plane-window.png" alt="12 Things to tell any Traveler">
+                        <p>12 Things I’d Tell Any New Traveler</p>
+                    </div>
+
+                    <div class="taj_mahal">
+                        <img src="img/taj-mahal.png" alt="Taj Mahal">
+                        <p>The Ultimate Packing List for Female Travelers</p>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </article>
+    <!-- Article-->
+
+    <!--Aside-->
+    <aside>
+        <div class="container">
+            <h2>Happy Customers</h2>
+            <div class="row_1">
+                <i class="fa fa-quote"></i><!-- Left Quote icon-->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Quod repellendus architecto nihil provident officiis. Ducimus 
+                    molestiae eligendi atque nemo sunt, maiores aliquid temporibus 
+                    ab aliquam maxime adipisci exercitationem dicta accusamus.
+                </p>
+                <div class="user">
+                    <img src="img/user.png" alt="Chimweso Faith Mukoko">
+                    <div>
+                        <p>Chimweso Faith Mukoko</p>
+                        <p>Project Manager flyhigh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row_2">
+                <i class="fa fa-quote"></i><!-- Left Quote icon-->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Quod repellendus architecto nihil provident officiis. Ducimus 
+                    molestiae eligendi atque nemo sunt, maiores aliquid temporibus 
+                    ab aliquam maxime adipisci exercitationem dicta accusamus.
+                </p>
+                <div class="user">
+                    <img src="img/user.png" alt="Chimweso Faith Mukoko">
+                    <div>
+                        <p>Chimweso Faith Mukoko</p>
+                        <p>Project Manager flyhigh</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </aside>
+    <!--Aside-->
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright<a href="mailto:kaswekamukokok@gmail.com">@Kaswekamukoko@gmail.com</a>. All rights reserved</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="# ">Home</a></li>
+                    <li><a href="# ">About</a></li>
+                    <li><a href="# ">Places</a></li>
+                    <li><a href="# ">Careers</a></li>
+                    <li><a href="# ">Blog</a></li>
+                </ul> 
+            </nav>
+            <div class="socials">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <!--Footer-->
 </body>
 </html>
