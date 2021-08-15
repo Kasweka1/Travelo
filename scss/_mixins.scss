@@ -1,0 +1,93 @@
+//Buttons
+@mixin btn($padding, $borderRadius){
+    padding: $padding;
+    border-radius: $borderRadius;
+    background-color: $buttonColor;
+    color: #fff;
+}
+
+//images
+@mixin imageFilter($width, $brightness: 72%) {
+    width: $width;
+    filter: brightness(72%)
+}
+
+//container
+@mixin container{
+    width:93%;
+    margin: 20px auto;
+}
+//header2 elemnts
+
+@mixin hd2{
+    text-align: center;
+    margin-bottom:20px ;
+}
+//p on absolute
+@mixin pAbsolute {
+    position: absolute;
+    top:25%;
+    left: 15%;
+    text-align: center;
+    width: 70%;
+    color: #fff;
+     font-size: 2.5em;
+    font-weight: 500;
+}
+//nav
+@mixin nav{
+    li{
+        display: inline;
+    }
+    a{
+        text-decoration:  none;
+        margin-right: 32px;
+        color:$navTextColor;
+        font-size: 1.05em;
+    }
+}
+//city cards
+@mixin city {
+    width: 100%;
+                color :$underlineColor;
+                img{
+                    width: 100%;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+                h2{
+                    text-align: left;
+                    margin: 0 0 3px 0;
+                    font-weight: 500;
+                }
+                .wrap{
+                    display: flex;
+                    justify-content:space-between;
+                    margin: 20px 0 0 0;
+                }
+                .row1{
+                    p{
+                        margin-top: 5px;
+                    }
+                }
+                .row2{
+                    text-align: right;
+                    p:nth-child(1){
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                    }
+                }
+                .icons{
+                    display: flex;
+ 
+                    img{
+                        width:20%;
+
+                        &:nth-child(2){
+                            margin: 0 5px 0 5px;
+                        } 
+                    }
+                } 
+}

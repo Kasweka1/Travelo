@@ -4,6 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/globe.png" type="image/x-icon">
     <title>Travelo</title>
 </head>
 <body>
@@ -11,7 +13,7 @@
         <div class="container">
             <div class="top_nav">
                 <div class="logo">
-                    <img src="img/globe.png" alt="Travelo Logo">
+                    <img src="img/globe(2).png" alt="Travelo Logo">
                     <p>Travelo</p>
                 </div>
                 <nav>
@@ -38,18 +40,23 @@
                                 Magna Aliqua. Ultricies Mi Eget Mauris 
                             </p>
                         </div>
-                        <form action="POST" method="get">
-                            <label for="search">Where You Want to go</label>
-                            <input type="text" name="search" id="search" placeholder="Search your location">
+                        <form>
+                            <div>
+                                <label for="search">Where You Want to go</label><br>
+                                <input type="text" name="search" id="search" placeholder="Search your location">
+                            </div>  
                             <!-- -->
-                            <label for="date">Check-in</label>
+                            <div>
+                                <label for="date">Check-in</label><br>
+                                <input type="text" name="date" id="date" placeholder="Add Date">    
+                            </div>    
+                            <!-- -->
+                            <div>
+                                <label for="date">Check-out</label><br>
                             <input type="text" name="date" id="date" placeholder="Add Date">
+                            </div>
                             <!-- -->
-                            <label for="date">Check-out</label>
-                            <input type="text" name="date" id="date" placeholder="Add Date">
-                            <!-- -->
-                            <input type="submit" name="Explore" id="Explore" placeholder="Explore Now">
-
+                            <input type="submit" name="Explore" id="Explore" value="Explore Now">
                         </form>
                     </div>
                 </div>
@@ -62,14 +69,14 @@
     <section>
         <div class="container">
             <div class="prices">
-                <!--icon here-->
+                <img src="img/icons/prices.png">
                 <p>Get Best Prices</p>
                 <p>Pay through our application and save thousands 
                    and get amazing rewards 
                 </p>
             </div>
             <div class="covid">
-                <!--icon here-->
+                <img src="img/icons/Covid Safe.png">
                 <p>Covid Safe</p>
                 <p>We have all the curated hotels that 
                     have all the precaution for a corvid 
@@ -77,14 +84,14 @@
                 </p>
             </div>
             <div class="payment">
-                <!--icon here-->
+                <img src="img/icons/card.png">
                 <p>Flexible Payment</p>
                 <p>Enjoy the flexible payment through our 
                     app and get rewards on every payment 
                 </p>
             </div>
             <div class="payment">
-                <!--icon here-->
+                <img src="img/icons/Nearby.png">
                 <p>Find The Best Near You</p>
                 <p>Find the best hotels and places to visit 
                     near you in a single click  
@@ -98,101 +105,141 @@
     <main>
         <div class="container">
             <h2>Recommendated Destination</h2>
-            <div class="tabbed_content">
+            <div class="filter_content">
                 <!-- tab links-->
                 <div id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('all')"> The Weekend Break</button>
-                    <button class="btn" onclick="filterSelection('package')"> The Package Holiday</button>
-                    <button class="btn" onclick="filterSelection('group')"> The Group Tour</button>
-                    <button class="btn" onclick="filterSelection('long')"> Long Term Slow Travel</button>
+                    <span class="btn active" onclick="filterSelection('all')"> The Weekend Break</span>
+                    <span class="btn" onclick="filterSelection('package')"> The Package Holiday</span>
+                    <span class="btn" onclick="filterSelection('group')"> The Group Tour</span>
+                    <span class="btn" onclick="filterSelection('long')"> Long Term Slow Travel</span>
                 </div>
                 <!-- Tab Content-->
-                <div id="weekend" class="tab_content">
+                <div class="tab_content">
                 
                      <!-- Singapore-->
                     <div class="city package">
                         <img src="img/Singapore.png" alt="Singapore">
+                        <h2>Singapore</h2>
                         <p>Singapore, officially the Republic of Singapore, is a </p>
-                        <div class="icons">
-                            <i class="fa fa-hotel_location"></i>
-                            <i class="fa fa-dish"></i>
-                            <i class="fa fa-plane"></i>
-                            <p>1000 Kms</p>
-                        </div>
-                        <div class="ruppees">
-                           <p>K38000</p> 
-                           <p>Approx 2 night trip</p>
-                        </div>
+                        <div class="wrap">
+                            <div class="row1">
+                                <div class="icons">
+                                    <img src="img/icons/hotel.png">
+                                    <img src="img/icons/dish.png">
+                                    <img src="img/icons/plane.png">
+                                </div>
+                                <p>1000 Kms</p>
+                            </div>
+                            <div class="row2">
+                               <p>K38000</p> 
+                               <p>Approx 2 night trip</p>
+                            </div>
+                        </div>  
                     </div>
 
                       <!-- Thailand-->
                     <div class="city package">
                         <img src="img/Thailand.png" alt="Thailand">
+                        <h2>Thailand</h2>                      
                         <p>Thailand is a Southeast Asian country. It's known for</p>
-                        <div class="icons">
-                            <!--Icons here-->
-                            <p>1000 Kms</p>
-                        </div>
-                        <div class="ruppees">
-                           <p>K78000</p> 
-                           <p>Approx 2 night trip</p>
-                        </div>
+                        <div class="wrap">
+                            <div class="row1">
+                                <div class="icons">
+                                    <img src="img/icons/hotel.png">
+                                    <img src="img/icons/dish.png">
+                                    <img src="img/icons/plane.png">
+                                </div>
+                                <p>1000 Kms</p>
+                            </div>
+                            <div class="row2">
+                               <p>K38000</p> 
+                               <p>Approx 2 night trip</p>
+                            </div>
+                        </div>  
                     </div>
 
                       <!-- Paris-->
                     <div class="city group">
                         <img src="img/Paris.png" alt="Paris">
-                        <p>Paris, France's capital, is a major European city and a</p>
-                        <div class="icons">
-                            <!--Icons here-->
-                            <p>1000 Kms</p>
-                        </div>
-                        <div class="ruppees">
-                           <p>K75000</p> 
-                           <p>Approx 2 night trip</p>
-                        </div>
+                        <h2>Paris</h2>
+                        <p>Paris, France's capital, is a major European city and<p>
+                            <div class="wrap">
+                                <div class="row1">
+                                    <div class="icons">
+                                        <img src="img/icons/hotel.png">
+                                        <img src="img/icons/dish.png">
+                                        <img src="img/icons/plane.png">
+                                    </div>
+                                    <p>1000 Kms</p>
+                                </div>
+                                <div class="row2">
+                                   <p>K38000</p> 
+                                   <p>Approx 2 night trip</p>
+                                </div>
+                            </div>  
                     </div>
 
                       <!-- New Zealand-->
                     <div class="city group">
                         <img src="img/New Zealand.png" alt="New Zealand">
+                        <h2>Paris</h2>
                         <p>New Zealand is an island country in the </p>
-                        <div class="icons">
-                            <!--Icons here-->
-                            <p>1000 Kms</p>
-                        </div>
-                        <div class="ruppees">
-                           <p>K43000</p> 
-                           <p>Approx 2 night trip</p>
-                        </div>
+                        <div class="wrap">
+                            <div class="row1">
+                                <div class="icons">
+                                    <img src="img/icons/hotel.png">
+                                    <img src="img/icons/dish.png">
+                                    <img src="img/icons/plane.png">
+                                </div>
+                                <p>1000 Kms</p>
+                            </div>
+                            <div class="row2">
+                               <p>K38000</p> 
+                               <p>Approx 2 night trip</p>
+                            </div>
+                        </div>  
                     </div>
 
                       <!-- Bora Bora -->
                     <div class="city long">
                         <img src="img/Bora Bora.png" alt="Bora Bora">
-                        <p>Bora Bora is a small South Pacific island northwest of</p>
-                        <div class="icons">
-                            <!--Icons here-->
-                            <p>1000 Kms</p>
-                        </div>
-                        <div class="ruppees">
-                           <p>K93000</p> 
-                           <p>Approx 2 night trip</p>
-                        </div>
+                        <h2>Bora Bora</h2>
+                        <p>Bora Bora is a small South Pacific island northwest</p>
+                        <div class="wrap">
+                            <div class="row1">
+                                <div class="icons">
+                                    <img src="img/icons/hotel.png">
+                                    <img src="img/icons/dish.png">
+                                    <img src="img/icons/plane.png">
+                                </div>
+                                <p>1000 Kms</p>
+                            </div>
+                            <div class="row2">
+                               <p>K38000</p> 
+                               <p>Approx 2 night trip</p>
+                            </div>
+                        </div>  
                     </div>
 
                     <!-- London-->
                     <div class="city long">
                         <img src="img/London.png" alt="London">
+                        <h2>London</h2>
                         <p>London, the capital of England and the United </p>
-                        <div class="icons">
-                            <!--Icons here-->
-                            <p>1000 Kms</p>
-                        </div>
-                        <div class="ruppees">
-                           <p>K57000</p> 
-                           <p>Approx 7 night trip</p>
-                        </div>
+                        <div class="wrap">
+                            <div class="row1">
+                                <div class="icons">
+                                    <img src="img/icons/hotel.png">
+                                    <img src="img/icons/dish.png">
+                                    <img src="img/icons/plane.png">
+                                </div>
+                                <p>1000 Kms</p>
+                            </div>
+                            <div class="row2">
+                               <p>K38000</p> 
+                               <p>Approx 2 night trip</p>
+                            </div>
+                        </div>  
                     </div>
                 </div>
                 <!-- Tab Content-->
@@ -208,17 +255,17 @@
             <div class="blogs">
                 <div class="kilimanjaro">
                     <img src="img/Kilimanjaro.png" alt="Ultimate Guide to Climbing Kilimanjaro">
-                    <p>The Ultimate Guide to Climbing Mount Kilimanjaro</p>
+                    <p>The Ultimate Guide<br> to Climbing <br>Mount Kilimanjaro</p>
                 </div>
                 <div class="traveler">
                     <div class="plane">
                         <img src="img/plane-window.png" alt="12 Things to tell any Traveler">
-                        <p>12 Things I’d Tell Any New Traveler</p>
+                        <p>12 Things I’d Tell Any<br> New Traveler</p>
                     </div>
 
                     <div class="taj_mahal">
                         <img src="img/taj-mahal.png" alt="Taj Mahal">
-                        <p>The Ultimate Packing List for Female Travelers</p>
+                        <p>The Ultimate Packing List for<br> Female Travelers</p>
                     </div>
                 </div>
             </div>
@@ -230,33 +277,35 @@
     <aside>
         <div class="container">
             <h2>Happy Customers</h2>
-            <div class="row_1">
-                <i class="fa fa-quote"></i><!-- Left Quote icon-->
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Quod repellendus architecto nihil provident officiis. Ducimus 
-                    molestiae eligendi atque nemo sunt, maiores aliquid temporibus 
-                    ab aliquam maxime adipisci exercitationem dicta accusamus.
-                </p>
-                <div class="user">
-                    <img src="img/user.png" alt="Chimweso Faith Mukoko">
-                    <div>
-                        <p>Chimweso Faith Mukoko</p>
-                        <p>Project Manager flyhigh</p>
+            <div class="wrapper">
+                <div class="row">
+                    <i class="fa fa-quote"></i><!-- Left Quote icon-->
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quod repellendus architecto nihil provident officiis. Ducimus 
+                        molestiae eligendi atque nemo sunt, maiores aliquid temporibus 
+                        ab aliquam maxime adipisci exercitationem dicta accusamus.
+                    </p>
+                    <div class="user">
+                        <img src="img/user.png" alt="Chimweso Faith Mukoko">
+                        <div>
+                            <p>Chimweso Faith Mukoko</p>
+                            <p>Project Manager flyhigh</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row_2">
-                <i class="fa fa-quote"></i><!-- Left Quote icon-->
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Quod repellendus architecto nihil provident officiis. Ducimus 
-                    molestiae eligendi atque nemo sunt, maiores aliquid temporibus 
-                    ab aliquam maxime adipisci exercitationem dicta accusamus.
-                </p>
-                <div class="user">
-                    <img src="img/user.png" alt="Chimweso Faith Mukoko">
-                    <div>
-                        <p>Chimweso Faith Mukoko</p>
-                        <p>Project Manager flyhigh</p>
+                <div class="row">
+                    <i class="fa fa-quote"></i><!-- Left Quote icon-->
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quod repellendus architecto nihil provident officiis. Ducimus 
+                        molestiae eligendi atque nemo sunt, maiores aliquid temporibus 
+                        ab aliquam maxime adipisci exercitationem dicta accusamus.
+                    </p>
+                    <div class="user">
+                        <img src="img/user.png" alt="Chimweso Faith Mukoko">
+                        <div>
+                            <p>Chimweso Faith Mukoko</p>
+                            <p>Project Manager flyhigh</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -280,7 +329,7 @@
                 </ul> 
             </nav>
             <div class="socials">
-                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-facebook-f"></a>
                 <a href="#" class="fa fa-linkedin"></a>
                 <a href="#" class="fa fa-instagram"></a>
             </div>
