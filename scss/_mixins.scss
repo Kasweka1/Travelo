@@ -4,6 +4,10 @@
     border-radius: $borderRadius;
     background-color: $buttonColor;
     color: #fff;
+    &:hover{
+        opacity: 80%;
+        cursor: pointer;
+    }
 }
 
 //images

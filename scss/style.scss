@@ -148,6 +148,10 @@ main{
     .container{
         @include container;
         padding: 40px 0;
+        //for the filter
+        .show {
+            display: grid;
+          }
         h2{
             @include hd2;
         }
@@ -162,6 +166,10 @@ main{
                    margin:0 27px 0 27px;
                    font-weight: 500;
                    cursor: pointer;
+                   &:active{
+                       border-bottom: 3.5px solid #163235;
+                       padding-bottom: 7.5px;
+                   }
                 }
             }
         .tab_content{
@@ -235,6 +243,10 @@ aside{
                 width: 48%;
                 box-shadow: 10px 10px 12px #F1FAFF;
                 padding: 30px 10px 30px 30px;
+                &:hover{
+                    transform: scale(1.05);
+                    cursor: pointer;
+                }
                 p{
                     font-size: 1.1em;
                 }
