@@ -160,16 +160,17 @@ main{
                 background-color: #F1FAFF;
                 border-bottom: .5px solid #A7A7A7;
                 padding-bottom: 10px;
-                width: 69.5%;
+                width: 80%;
                 text-align: center;
                 span{
-                   margin:0 27px 0 27px;
+                   margin:0 10px 0 10px;
                    font-weight: 500;
                    cursor: pointer;
-                   &:active{
-                       border-bottom: 3.5px solid #163235;
-                       padding-bottom: 7.5px;
-                   }
+                   
+                }
+                .active{
+                    border-bottom: 3.5px solid #163235;
+                    padding-bottom: 7.5px;
                 }
             }
         .tab_content{
@@ -179,7 +180,10 @@ main{
             row-gap: 120px;
             
             .city{
-                @include city; 
+                @include city;                
+            }
+            .hide{
+                display: none;
             }
         }
     }
@@ -193,6 +197,7 @@ article{
         @include container;
         h2{
                 @include hd2;
+                // font-size: 50%;
         }
         img{
             @include imageFilter(100%);      
